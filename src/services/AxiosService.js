@@ -1,6 +1,6 @@
 import axios from 'axios'
 
 export const api = axios.create({
-  baseURL: 'https://gregslist-server.herokuapp.com/api/cars',
+  baseURL: 'https://chase-bcw-class.herokuapp.com/api',
   timeout: 3000
 })
