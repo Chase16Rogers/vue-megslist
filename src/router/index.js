@@ -1,9 +1,9 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 // @ts-ignore
 import CarDetailsPage from '../pages/CarDetailsPage.vue'
-// @ts-ignore
+import HouseDetailsPage from '../pages/HouseDetailsPage.vue'
 import CarsPage from '../pages/CarsPage.vue'
-// import HousesPage from '../pages/HousesPage.vue'
+import HousesPage from '../pages/HousesPage.vue's
 
 const routes = [
   {
@@ -11,20 +11,18 @@ const routes = [
     name: 'Cars',
     component: CarsPage
   }, {
-  {
     path: '/houses',
-    name: 'House',
+    name: 'Houses',
     component: HousesPage
   }, {
     path: '/cars/:id',
     name: 'CarDetails',
     component: CarDetailsPage
   }, {
-  // }, {
-  //   path: '/houses/:id',
-  //   name: 'HouseDetails',
-  //   component: HouseDetailsPage
-  // }, {
+    path: '/houses/:id',
+    name: 'HouseDetails',
+    component: HouseDetailsPage
+  }, {
     path: '/:catchAll(.*)*',
     redirect: '/cars',
     component: null

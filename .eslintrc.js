@@ -21,10 +21,10 @@ module.exports = {
     'no-console': PROD ? ERROR : WARN,
     'no-debugger': PROD ? ERROR : WARN,
     'space-before-function-paren': [WARN, NEVER],
-    'vue/max-attributes-per-line': [ERROR, {
-      singleline: 5,
+    'vue/max-attributes-per-line': [WARN, {
+      singleline: 100,
       multiline: {
-        max: 1,
+        max: 100,
         allowFirstLine: true
       }
     }],

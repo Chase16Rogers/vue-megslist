@@ -1,26 +1,28 @@
 <template>
-  <nav class="navbar navbar-expand navbar-light bg-light">
-    <div class="nav navbar-nav">
-      <router-link :to="{ name: 'Cars' }" class="nav-item nav-link active">
-        Cars
-      </router-link>
-      <router-link :to="{ name: 'Houses' }" class="nav-item nav-link active">
-        Houses
-      </router-link>
+  <div class="">
+    <nav class="navbar navbar-expand navbar-light bg-light">
+      <div class="nav navbar-nav">
+        <router-link :to="{ name: 'Cars' }" class="nav-item nav-link active">
+          Cars
+        </router-link>
+        <router-link :to="{ name: 'Houses' }" class="nav-item nav-link active">
+          Houses
+        </router-link>
       <!-- <router-link class="nav-item nav-link" :to="{ name: 'About' }">
         About
       </router-link> -->
-    </div>
-  </nav>
-  <!-- NOTE Router-View allows the Router to determine which component gets loaded -->
-  <router-view />
-  <footer class="container-fluid bg-dark text-light footer-bottom">
-    <div class="row">
-      <div class="col p-5 text-center">
-        <p>Made with ♥ by CodeWorks</p>
       </div>
-    </div>
-  </footer>
+    </nav>
+    <!-- NOTE Router-View allows the Router to determine which component gets loaded -->
+    <router-view class="" />
+    <!-- <footer class="container-fluid bg-dark text-light footer-bottom">
+      <div class="row">
+        <div class="col p-5 text-center">
+          <p>Made with ♥ by CodeWorks</p>
+        </div>
+      </div>
+    </footer> -->
+  </div>
 </template>
 
 <style lang="scss">

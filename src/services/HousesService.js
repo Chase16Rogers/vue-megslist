@@ -3,13 +3,14 @@ import { api } from './AxiosService'
 
 class HousesService {
   async getHouses() {
-    try {
-      const res = await api.get('houses')
-      console.log(res.data)
-      AppState.houses = res.data
-    } catch (error) {
-      console.error(error)
-    }
+    const res = await api.get('houses')
+    AppState.houses = res.data
+  }
+
+  async getHouse(id) {
+    console.log(id)
+    const res = await api.get('houses/' + id)
+    AppState.activeHouse = res.data
   }
 }
 export const housesService = new HousesService()
